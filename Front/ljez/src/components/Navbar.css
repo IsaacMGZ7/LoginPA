@@ -1,0 +1,57 @@
+/* Importar la fuente deseada desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  background-color: rgba(0, 128, 0, 0.7);
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif; /* Aplicar la nueva fuente */
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  font-weight: 500; /* Aumentar el grosor de la fuente */
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
